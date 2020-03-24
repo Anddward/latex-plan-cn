@@ -1,0 +1,49 @@
+\documentclass{ctexart}
+
+% for chinese env
+\usepackage{xeCJK}
+
+% geometry
+\usepackage[top=2.5cm,bottom=2.5cm, left=3cm, right=3cm, headheight=18pt]{geometry}
+% \geometry{showframe}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{2.2em}
+\renewcommand{\baselinestretch}{1.25}
+
+% for debug
+\usepackage{lipsum}
+\usepackage{zhlipsum}
+
+% header & footer
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\chead{\footnotesize 佛山市中达物联科技有限公司}
+\cfoot{\footnotesize \thepage{} / \pageref{LastPage}}
+
+
+%watermark
+\usepackage{draftwatermark}
+\SetWatermarkText{佛山市中达物联科技有限公司}
+\SetWatermarkScale{0.35}
+\SetWatermarkColor[gray]{0.93}
+
+\begin{document}
+\begin{titlepage}
+  \vspace*{0.15\textheight}
+  \begin{center}
+    {\Large 拿火吉他生产溯源管理系统(\uppercase\expandafter{\romannumeral 4\relax}期）\\[0.3cm]方案书} 
+  \end{center}
+
+  \vspace{0.45\textheight}
+  
+  \begin{center}
+  {\normalsize 佛山市中达物联科技有限公司} \par
+  {\normalsize 2020年3月}
+  \end{center}
+\end{titlepage}
+
+\lipsum \par
+
+
+\end{document}
