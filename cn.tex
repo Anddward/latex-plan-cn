@@ -1,11 +1,16 @@
-\documentclass{ctexart}
+\documentclass[a4paper,12pt]{article}
 
 % for chinese env
 \usepackage{xeCJK}
+\newCJKfontfamily[hei]\heiti{Source Han Sans SC}
+\newCJKfontfamily[song]\songti{Source Han Serif SC}
+%\newCJKfontfamily[kai]\kaiti{KaiTi_GB2312}
+\newCJKfontfamily[kai]\kaiti{Kaiti SC}
+\setCJKmainfont{Source Han Serif SC}
 
 % geometry
 \usepackage[top=2.5cm,bottom=2.5cm, left=3cm, right=3cm, headheight=18pt]{geometry}
-% \geometry{showframe}
+%\geometry{showframe}
 \setlength{\parskip}{1em}
 \setlength{\parindent}{2.2em}
 \renewcommand{\baselinestretch}{1.25}
@@ -44,6 +49,18 @@
 \end{titlepage}
 
 \lipsum \par
+
+你好 \par
+
+\songti
+宋体 \par
+
+\heiti
+黑体-黑体-黑体 \par
+
+\kaiti
+楷体-楷体-楷体
+
 
 
 \end{document}
