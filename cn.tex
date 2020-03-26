@@ -2,18 +2,23 @@
 
 % for chinese env
 \usepackage{xeCJK}
-\newCJKfontfamily[hei]\heiti{Source Han Sans SC}
-\newCJKfontfamily[song]\songti{Source Han Serif SC}
-%\newCJKfontfamily[kai]\kaiti{KaiTi_GB2312}
-\newCJKfontfamily[kai]\kaiti{Kaiti SC}
-\setCJKmainfont{Source Han Serif SC}
+\usepackage{type1cm}
+\newCJKfontfamily[Hei]\heiti{Source Han Sans SC}
+\newCJKfontfamily[Song]\songti{Source Han Serif SC}
+\newCJKfontfamily[Kai]\kaiti{KaiTi_GB2312}
+\newCJKfontfamily[Number]\shuzi{Times New Roman}
+\setCJKmainfont{PingFang SC}
+\newcommand{\zhengwen}{\fontsize{12pt}{18pt}\selectfont}            % 小四, 1.5倍行距
+\newcommand{\biaoti}{\fontsize{26pt}{26pt}\selectfont}            % 小四, 1.5倍行距
+\newcommand{\xiaobiaoti}{\fontsize{16pt}{44pt}\selectfont}            % 小四, 1.5倍行距
+\newcommand{\headersize}{\fontsize{9}{13.5}\selectfont}
 
 % geometry
-\usepackage[top=2.5cm,bottom=2.5cm, left=3cm, right=3cm, headheight=18pt]{geometry}
+\usepackage[top=3.7cm,bottom=3.5cm, left=2.6cm, right=2.6cm, headheight=16pt]{geometry}
 %\geometry{showframe}
-\setlength{\parskip}{1em}
-\setlength{\parindent}{2.2em}
-\renewcommand{\baselinestretch}{1.25}
+\setlength{\parindent}{0.75cm}
+\setlength{\parskip}{1.5em}
+
 
 % for debug
 \usepackage{lipsum}
@@ -23,43 +28,33 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \pagestyle{fancy}
-\chead{\footnotesize 佛山市中达物联科技有限公司}
-\cfoot{\footnotesize \thepage{} / \pageref{LastPage}}
+\chead{\songti \headersize 佛山市中达物联科技有限公司}
+\cfoot{\songti \headersize \textbf{\thepage{} / \pageref{LastPage}}}
 
 
 %watermark
 \usepackage{draftwatermark}
 \SetWatermarkText{佛山市中达物联科技有限公司}
-\SetWatermarkScale{0.35}
+\SetWatermarkScale{0.30}
 \SetWatermarkColor[gray]{0.93}
 
 \begin{document}
 \begin{titlepage}
-  \vspace*{0.15\textheight}
+  \vspace*{0.1\textheight}
   \begin{center}
-    {\Large 拿火吉他生产溯源管理系统(\uppercase\expandafter{\romannumeral 4\relax}期）\\[0.3cm]方案书} 
+    {\heiti \biaoti 拿火吉他生产溯源管理系统(\uppercase\expandafter{\romannumeral 4\relax}期）\\[0.3cm]方案书} 
   \end{center}
 
-  \vspace{0.45\textheight}
+  \vspace{0.60\textheight}
   
   \begin{center}
-  {\normalsize 佛山市中达物联科技有限公司} \par
-  {\normalsize 2020年3月}
+  {\kaiti \xiaobiaoti 佛山市中达物联科技有限公司} \par
+  {\kaiti \xiaobiaoti 2020年3月}
   \end{center}
 \end{titlepage}
 
-\lipsum \par
-
-你好 \par
-
-\songti
-宋体 \par
-
-\heiti
-黑体-黑体-黑体 \par
-
-\kaiti
-楷体-楷体-楷体
+\songti\zhengwen
+\zhlipsum \par
 
 
 
