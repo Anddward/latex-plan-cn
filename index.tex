@@ -1,4 +1,5 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{report}
+
 
 \input{./style/fonts.tex} % for chinese env
 \input{./style/layout.tex} % document layout
@@ -6,23 +7,31 @@
 \input{./style/water-mark.tex} % water mark setting
 \input{./style/debug.tex} % debug setting
 
-% for debug
+
+
 
 \begin{document}
 
-\input{./chapters/preface.tex} % preface
+\input{./sections/preface.tex} % preface
+
+\newpage
+\input{./sections/change-logs.tex} % change logs
 
 \newpage
 \tableofcontents
 
 \newpage
-\input{./chapters/chapter1.tex}
+\input{./sections/background.tex}
+\input{./sections/target.tex}
+
+\comment{
 
 \newpage
-\input{./chapters/chinese-debug.tex} % chinese debug page
+\input{./sections/chinese-debug.tex} % chinese debug page
 
 \newpage
-\input{./chapters/english-debug.tex} % english debug page
+\input{./sections/english-debug.tex} % english debug page
 
+}
 
 \end{document}
