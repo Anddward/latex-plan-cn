@@ -1,1 +1,2 @@
-$out_dir='./build'
+$out_dir='./.build';
+$pdf_mode=5;
